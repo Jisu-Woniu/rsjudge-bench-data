@@ -1,0 +1,9 @@
+/100M filter=lfs diff=lfs merge=lfs -text
+*.trim filter=lfs diff=lfs merge=lfs -text
+/100k filter=lfs diff=lfs merge=lfs -text
+/10M filter=lfs diff=lfs merge=lfs -text
+/10k filter=lfs diff=lfs merge=lfs -text
+/1M filter=lfs diff=lfs merge=lfs -text
+/1k filter=lfs diff=lfs merge=lfs -text
+*.sh filter=lfs diff=lfs merge=lfs -text
+*.sh !text !filter !merge !diff
