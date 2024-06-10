@@ -1,3 +1,5 @@
 #!/bin/bash
-sd -f m ' +$' '' <"$1" >"$1.trim"
-sd -f e '\n+$' '' "$1.trim"
+for i in 1k 16k 256k 4M 64M; do
+    sd -f m ' +$' '' <"$i" >"$i.trim"
+    sd -f e '\n+$' '' "$i.trim"
+done
